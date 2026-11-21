@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trilha 1: Mentalidade & Janela Histórica | Vendendo AIOS 2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { primary: '#FACC15', dark: { 900: '#111827', 800: '#1f2937', 700: '#374151', 600: '#4b5563' } } } }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .dark body { background-color: #111827; }
+    .topic-explanation { display: none; }
+    .topic-explanation.active { display: block; }
+
+    html:not(.dark) body { background-color: #f8fafc; }
+    html:not(.dark) .bg-dark-900 { background-color: #ffffff; }
+    html:not(.dark) .bg-dark-800 { background-color: #f9fafb; }
+    html:not(.dark) .bg-dark-700 { background-color: #f3f4f6; }
+    html:not(.dark) .bg-dark-600 { background-color: #e5e7eb; }
+    html:not(.dark) .text-neutral-100 { color: #111827; }
+    html:not(.dark) .text-neutral-300 { color: #4b5563; }
+    html:not(.dark) .text-neutral-400 { color: #6b7280; }
+    html:not(.dark) .text-neutral-500 { color: #9ca3af; }
+    html:not(.dark) .border-dark-600 { border-color: #d1d5db; }
+    html:not(.dark) .border-dark-700 { border-color: #e5e7eb; }
+
+    html:not(.dark) .text-emerald-400 { color: #059669; }
+    html:not(.dark) .bg-emerald-500\/20 { background-color: rgba(5,150,105,0.12); }
+    html:not(.dark) .bg-emerald-500\/10 { background-color: rgba(5,150,105,0.08); }
+    html:not(.dark) .border-emerald-500\/30 { border-color: rgba(5,150,105,0.25); }
+    html:not(.dark) .hover\:bg-emerald-500\/30:hover { background-color: rgba(5,150,105,0.18); }
+    html:not(.dark) .hover\:text-emerald-400:hover { color: #059669; }
+    html:not(.dark) .hover\:bg-emerald-500\/10:hover { background-color: rgba(5,150,105,0.08); }
+
+    html:not(.dark) .hover\:text-blue-400:hover { color: #2563eb; }
+    html:not(.dark) .hover\:bg-blue-500\/10:hover { background-color: rgba(37,99,235,0.08); }
+    html:not(.dark) .hover\:text-purple-400:hover { color: #7c3aed; }
+    html:not(.dark) .hover\:bg-purple-500\/10:hover { background-color: rgba(124,58,237,0.08); }
+    html:not(.dark) .hover\:text-amber-400:hover { color: #92400e; }
+    html:not(.dark) .hover\:bg-amber-500\/10:hover { background-color: rgba(217,119,6,0.08); }
+    html:not(.dark) .hover\:text-teal-400:hover { color: #0d9488; }
+    html:not(.dark) .hover\:bg-teal-500\/10:hover { background-color: rgba(13,148,136,0.08); }
+    html:not(.dark) .hover\:text-rose-400:hover { color: #9f1239; }
+    html:not(.dark) .hover\:bg-rose-500\/10:hover { background-color: rgba(225,29,72,0.08); }
+
+    html:not(.dark) [class*="bg-gradient-to"] { background-image: none !important; }
+    html:not(.dark) .text-primary { color: #a16207; }
+    html:not(.dark) .bg-primary\/10 { background-color: rgba(161,98,7,0.08); }
+    html:not(.dark) .border-primary\/40 { border-color: rgba(161,98,7,0.25); }
+    html:not(.dark) .text-sky-400 { color: #0369a1; }
+    html:not(.dark) .text-yellow-400 { color: #a16207; }
+    html:not(.dark) .hover\:text-sky-300:hover { color: #0284c7; }
+    html:not(.dark) .hover\:text-yellow-300:hover { color: #854d0e; }
+    html:not(.dark) .bg-dark-900\/95 { background-color: rgba(255,255,255,0.95); }
+
+    .dark .border-dark-600 { border-color: #374151; }
+    .dark .divide-dark-600 > :not([hidden]) ~ :not([hidden]) { border-color: #374151; }
+  </style>
+</head>
+<body class="bg-dark-900 text-neutral-100 min-h-screen">
+
+  <!-- NAVIGATION COMPLETA -->
+  <nav class="sticky top-0 z-50 bg-dark-900/95 backdrop-blur-sm border-b border-dark-600">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-14">
+        <div class="flex items-center space-x-4">
+          <a href="../../index.html" class="flex items-center space-x-2 text-yellow-400 hover:text-yellow-300">
+            <span class="text-2xl">🚀</span>
+            <span class="font-bold text-lg hidden sm:inline">Vendendo AIOS 2026</span>
+          </a>
+          <span class="text-neutral-600">|</span>
+          <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-medium">INEMA.CLUB</a>
+        </div>
+        <div class="flex items-center space-x-1 sm:space-x-2">
+          <a href="index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-emerald-400 bg-emerald-500/10">
+            <span class="sm:hidden">T1</span><span class="hidden sm:inline">Mentalidade</span>
+          </a>
+          <a href="../trilha2/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-blue-400 hover:bg-blue-500/10 transition-colors">
+            <span class="sm:hidden">T2</span><span class="hidden sm:inline">Oferta</span>
+          </a>
+          <a href="../trilha3/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-purple-400 hover:bg-purple-500/10 transition-colors">
+            <span class="sm:hidden">T3</span><span class="hidden sm:inline">Aquisição</span>
+          </a>
+          <a href="../trilha4/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-amber-400 hover:bg-amber-500/10 transition-colors">
+            <span class="sm:hidden">T4</span><span class="hidden sm:inline">Escada</span>
+          </a>
+          <a href="../trilha5/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-teal-400 hover:bg-teal-500/10 transition-colors">
+            <span class="sm:hidden">T5</span><span class="hidden sm:inline">Estrutura</span>
+          </a>
+          <a href="../trilha6/index.html" class="px-3 py-1.5 rounded-lg text-sm font-semibold text-neutral-400 hover:text-rose-400 hover:bg-rose-500/10 transition-colors">
+            <span class="sm:hidden">T6</span><span class="hidden sm:inline">Escala</span>
+          </a>
+          <button id="theme-toggle" class="p-2 rounded-lg bg-dark-700 hover:bg-dark-600 transition-colors ml-2">
+            <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+            <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-neutral-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER DA TRILHA -->
+  <header class="bg-gradient-to-br from-emerald-900/30 via-dark-800 to-dark-800 py-12 border-b border-dark-600">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs font-semibold rounded-full mb-4">TRILHA 1</span>
+      <h1 class="text-3xl sm:text-4xl font-bold mb-4">🧠 Mentalidade & Janela Histórica</h1>
+      <p class="text-lg text-neutral-400 max-w-3xl">
+        Antes de qualquer tática, o mapa. Por que 2026 é a 4ª onda da TI, por que síndrome do impostor é problema de degrau,
+        é o que é o AI Operating System que você vai vender.
+      </p>
+      <div class="grid grid-cols-4 gap-4 mt-8 max-w-2xl">
+        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+          <div class="text-xl font-bold text-emerald-400">3</div>
+          <div class="text-xs text-neutral-400">Módulos</div>
+        </div>
+        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+          <div class="text-xl font-bold text-emerald-400">18</div>
+          <div class="text-xs text-neutral-400">Tópicos</div>
+        </div>
+        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+          <div class="text-xl font-bold text-emerald-400">~2h</div>
+          <div class="text-xs text-neutral-400">Duração</div>
+        </div>
+        <div class="bg-dark-800/50 rounded-lg p-3 border border-dark-600">
+          <div class="text-xl font-bold text-emerald-400">Início</div>
+          <div class="text-xs text-neutral-400">Nível</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+    <!-- MAPA DA TRILHA -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-6">Mapa da trilha</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <a href="#módulo-1-1" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-emerald-400 font-bold text-sm">1.1</span>
+            <span class="text-xs text-neutral-500">~40 min</span>
+          </div>
+          <h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">🌊 As 4 ondas da TI</h3>
+          <p class="text-xs text-neutral-400">90/00/10/IA — mesmo padrão</p>
+        </a>
+        <a href="#módulo-1-2" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-emerald-400 font-bold text-sm">1.2</span>
+            <span class="text-xs text-neutral-500">~35 min</span>
+          </div>
+          <h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">🪜 Impostor e degrau</h3>
+          <p class="text-xs text-neutral-400">Desce um degrau, some</p>
+        </a>
+        <a href="#módulo-1-3" class="group bg-dark-800 rounded-xl border border-dark-600 hover:border-emerald-500/30 p-5 transition-all">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-emerald-400 font-bold text-sm">1.3</span>
+            <span class="text-xs text-neutral-500">~45 min</span>
+          </div>
+          <h3 class="font-semibold mb-1 group-hover:text-emerald-400 transition-colors">🤖 O que é AI OS</h3>
+          <p class="text-xs text-neutral-400">Sistema, não tutorial</p>
+        </a>
+      </div>
+    </section>
+
+    <h2 class="text-2xl font-bold mb-6">Conteúdo detalhado</h2>
+
+    <!-- MÓDULO 1.1 -->
+    <div id="módulo-1-1" class="bg-dark-800 rounded-xl border border-dark-600 mb-6">
+      <div class="p-6 border-b border-dark-600">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-emerald-400 font-bold">1.1</span>
+          <span class="text-xs text-neutral-500">~40 min</span>
+        </div>
+        <h3 class="text-2xl font-bold mb-2">🌊 As 4 ondas da TI</h3>
+        <p class="text-neutral-400 text-sm">Anos 90: computadores e redes. 2000: internet. 2010: redes sociais. 2020: IA. O padrão se repete — e você está na hora certa.</p>
+      </div>
+      <div class="divide-y divide-dark-600">
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+            <span class="text-lg">🖥️</span>
+            <div><span class="font-medium">Anos 90 — montar PC, configurar rede</span><span class="text-neutral-500 text-sm ml-2">- 1ª onda</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">A profissão de "técnico de informática" nasceu cobrando hora pra instalar Windows, montar rede e ensinar Office.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">Quem cobrava 50 reais a hora pra configurar Windows 98 virou dono de loja de informática em 5 anos. Mesma logica agora.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Pequeno -> medio -> empresarial. Serviço paga a curva de aprendizado. Não tinha curso pronto — quem fez na prática venceu.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+            <span class="text-lg">🌐</span>
+            <div><span class="font-medium">Anos 2000 — sites e e-commerce</span><span class="text-neutral-500 text-sm ml-2">- 2ª onda</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">"Toda empresa precisa de site." Frase obvia hoje, mas em 2001 você vendia HTML estatico por mil reais pra padaria.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">Quem montou sites virou agência digital. Quem virou agência digital sobreviveu virando agência de performance. Cada onda paga a seguinte.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Serviço de pequeno volume, alta margem, escalavel via processo. Quem começou cobrando por site terminou cobrando recorrente de hospedagem + manutenção.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+            <span class="text-lg">📱</span>
+            <div><span class="font-medium">Anos 2010 — social media e ads</span><span class="text-neutral-500 text-sm ml-2">- 3ª onda</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">Facebook Ads, Instagram, social media manager. Profissão inexistente em 2009, salario alto em 2014.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">Confirma o padrão: ferramenta nova + empresa não sabe usar + alguem cobra pra ensinar = nova carreira. IA agora é o mesmo cenario.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Tração via comunidade e estudo de caso. Quem postou em público cresceu. Quem ficou quieto desapareceu.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+            <span class="text-lg">🤖</span>
+            <div><span class="font-medium">Anos 2020 — IA e AIOS</span><span class="text-neutral-500 text-sm ml-2">- 4ª onda</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">Ferramenta nova (LLM, agentes, MCP). Empresa não sabe usar. Mesma posição das ondas anteriores — mas com janela mais curta porque o ritmo de adoção acelerou.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">61 pontos de gap entre quem PODERIA usar IA e quem REALMENTE usa. Esse gap é seu mercado.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Janela mais curta = velocidade importa. Quem entra em 2026 ainda é cedo. Quem esperar 2028 entra como commodity.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+            <span class="text-lg">🔁</span>
+            <div><span class="font-medium">O padrão que se repete em toda onda</span><span class="text-neutral-500 text-sm ml-2">- estrutura</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">3 fases iguais em toda onda: (1) entusiastas brincando, (2) serviço explicando, (3) produto consolidado.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">Estamos no início da fase 2. Serviço paga porque ninguem ainda consolidou produto. Quando consolidar, você já vai ter ativos.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Sirva primeiro pra descobrir o que o mercado paga. Depois embale como produto. Pular fase 2 = não saber o que construir.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
+            <span class="text-lg">⏳</span>
+            <div><span class="font-medium">Por que ésta janela é mais curta</span><span class="text-neutral-500 text-sm ml-2">- urgencia</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">Velocidade de adoção em IA é maior que nas ondas anteriores. ChatGPT chegou a 100M usuários em 2 meses; redes sociais demoraram anos.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">Quem entra em 2026 pega janela de serviço. Em 2028 já será mercado mais maduro com produtos consolidados.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Urgencia sem panico. Comece pequeno hoje, cresca consistente. 18 meses de consistencia batem 5 anos de planejamento.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+        <button onclick="openModal('modal-1-1')" class="px-4 py-2 text-sm bg-dark-600 hover:bg-dark-500 rounded-lg transition-colors">Ver em Modal</button>
+        <a href="modulo-1-1.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg transition-colors">Ver Completo</a>
+      </div>
+    </div>
+
+    <!-- MÓDULO 1.2 -->
+    <div id="módulo-1-2" class="bg-dark-800 rounded-xl border border-dark-600 mb-6">
+      <div class="p-6 border-b border-dark-600">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-emerald-400 font-bold">1.2</span>
+          <span class="text-xs text-neutral-500">~35 min</span>
+        </div>
+        <h3 class="text-2xl font-bold mb-2">🪜 Síndrome do impostor é problema de degrau</h3>
+        <p class="text-neutral-400 text-sm">Você não se sente fraude porque é ruim. Se sente porque está tentando vender o degrau errado. Desce um, some.</p>
+      </div>
+      <div class="divide-y divide-dark-600">
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+            <span class="text-lg">🎭</span>
+            <div><span class="font-medium">O que é síndrome do impostor</span><span class="text-neutral-500 text-sm ml-2">- definição operacional</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">Sensação de estar prestes a ser descoberto como fraude. Comum em quem entra em área nova.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">Sem entender, você trava. Entendendo, percebe que é sintoma e não diagnóstico.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Sintoma de problema de posicionamento, não de capacidade. Ataque a causa, não o sentimento.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+            <span class="text-lg">🪜</span>
+            <div><span class="font-medium">A escada do negócio de IA</span><span class="text-neutral-500 text-sm ml-2">- 4 degraus</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">Degrau 0: hora paga. 1: auditoria. 2: projeto. 3: recorrente. Cada degrau exige proof do anterior.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">Pular degrau gera impostor. Cada degrau te dá vocabulário, cases e relacionamentos pro seguinte.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Engatinhe antes de andar. 10 horas pagas valém mais que 1 retainer mal-vendido.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+            <span class="text-lg">🎯</span>
+            <div><span class="font-medium">Por que começar no degrau 0</span><span class="text-neutral-500 text-sm ml-2">- repeticoes</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">Degrau zero (hora paga) é onde você coleta repeticoes — conversas, troubleshooting, didática.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">Repeticao dissolve impostor melhor que estudo. 20 horas de sessão pagam por 1 projeto bem fechado.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Priorize reps, não cash. Dinheiro vem depois. Hoje você está comprando experiência com tempo.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+            <span class="text-lg">🚫</span>
+            <div><span class="font-medium">Por que NÃO começar pelo SaaS</span><span class="text-neutral-500 text-sm ml-2">- armadilha comum</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">SaaS exige distribuição, casos e produto único. Quem começa pelo SaaS sem distribuição queima 12 meses.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">SaaS mágico é o sonho que mais atrapalha iniciante. Serviço paga, ensina e dá material pro produto futuro.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Serviço primeiro. SaaS quando já tiver 20 clientes e enxergar o padrão idêntico em todos.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+            <span class="text-lg">🆓</span>
+            <div><span class="font-medium">Por que NUNCA dar consultoria de graça</span><span class="text-neutral-500 text-sm ml-2">- regra de ouro</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">Cobrar mesmo que pouco. R$ 100, R$ 50, R$ 30 — mas cobrar. Pagar é o filtro do compromisso.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">Quem não paga não aparece, não aplica, não decide. Você queima tempo e não colhe caso.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Exceção: amigo próximo pra calibrar didática (declarado como tal). Tudo mais é venda.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
+            <span class="text-lg">🧱</span>
+            <div><span class="font-medium">Pequeno baté sonhar grande</span><span class="text-neutral-500 text-sm ml-2">- principio operacional</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">Pequeno consistente vence grande hesitante. 3 horas pagas/semana por 6 meses = base de carreira.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">Cada repeticao destrava conhecimento que estudo não ensina. Cliente paga melhor que professor.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Meta semanal pequena e clara. Número de mensagens, número de sessões. Hipótese é ajuste.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+        <button onclick="openModal('modal-1-2')" class="px-4 py-2 text-sm bg-dark-600 hover:bg-dark-500 rounded-lg transition-colors">Ver em Modal</button>
+        <a href="modulo-1-2.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg transition-colors">Ver Completo</a>
+      </div>
+    </div>
+
+    <!-- MÓDULO 1.3 -->
+    <div id="módulo-1-3" class="bg-dark-800 rounded-xl border border-dark-600 mb-6">
+      <div class="p-6 border-b border-dark-600">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-emerald-400 font-bold">1.3</span>
+          <span class="text-xs text-neutral-500">~45 min</span>
+        </div>
+        <h3 class="text-2xl font-bold mb-2">🤖 O que é um AI Operating System</h3>
+        <p class="text-neutral-400 text-sm">Você não vende "aula de ChatGPT". Vende o sistema que captura dados, conhecimento e workflows do cliente — num lugar so.</p>
+      </div>
+      <div class="divide-y divide-dark-600">
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">1</span>
+            <span class="text-lg">📦</span>
+            <div><span class="font-medium">Definição de AI OS</span><span class="text-neutral-500 text-sm ml-2">- analogia do Windows</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">Sistema onde o dono opera o negócio — dados + conhecimento + workflows + agentes em um lugar so. Tipo Windows/Mac, mas pra empresa dele.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">Sem essa analogia, você vai pitchar "automação" é o dono não entende. Com ela, ele visualiza.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Sistema operacional do negócio. Lugar único. Captura, opera, escala.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">2</span>
+            <span class="text-lg">🧩</span>
+            <div><span class="font-medium">Componentes do AI OS</span><span class="text-neutral-500 text-sm ml-2">- 4 camadas</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">(1) Dados do negócio. (2) Conhecimento tacito do dono. (3) Workflows automatizados. (4) Agentes especializados.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">Você vende cada camada como ciclo de projeto. Primeira hora cobre 1 e 2; projeto cobre 3 e 4.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Dados -> contexto -> automação -> agente. Sempre nessa ordem. Pular gera "agente burro".</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">3</span>
+            <span class="text-lg">🔑</span>
+            <div><span class="font-medium">Por que só o DONO pode construir</span><span class="text-neutral-500 text-sm ml-2">- conhecimento tacito</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">Você é tradutor de ferramenta. O dono é dono do conhecimento. Sem ele, sistema fica genérico e não agrega valor.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">Posicionamento que protege seu trabalho: você não e substituivel porque transferiu fluencia de tool pra dominio.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Você + dono = sistema. Você sozinho = ferramenta genérica. Dono sozinho = nada feito.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">4</span>
+            <span class="text-lg">💎</span>
+            <div><span class="font-medium">AIOS reduz risco de pessoa-chave</span><span class="text-neutral-500 text-sm ml-2">- benefit-driven pitch</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">Empresa onde o dono e gargalo vale menos. AIOS extrai esse conhecimento — empresa fica vendavel, escalavel.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">Esse é o argumento que destrava CEO de PME. Ninguem quer ser o gargalo eterno do próprio negócio.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Reducao de key-man risk. Aumento de valuation. Liberdade pessoal pro dono. Tres argumentos fortes.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">5</span>
+            <span class="text-lg">🛠️</span>
+            <div><span class="font-medium">Stack basico recomendado</span><span class="text-neutral-500 text-sm ml-2">- ferramentas</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">Claude Code (ou Codex) + pasta de projeto + MCP + 1 banco simples (Supabase ou Postgres). Stack honesto e barato.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">Sem stack padrão você reinventa em cada cliente. Padrão = velocidade. Cliente não quer "minha stack favorita" — quer resultado.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">Padrão + simples + replicavel. Fuja de stack complexa pra impressionar. Cliente não se importa.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="topic-item">
+          <button onclick="toggleTopic(this)" class="w-full px-6 py-4 flex items-center space-x-3 hover:bg-dark-700/50 transition-colors text-left">
+            <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 text-sm font-bold flex items-center justify-center flex-shrink-0">6</span>
+            <span class="text-lg">🚀</span>
+            <div><span class="font-medium">Tarefa: construa SEU AIOS antes de vender</span><span class="text-neutral-500 text-sm ml-2">- obrigatorio</span></div>
+          </button>
+          <div class="topic-explanation px-6 pb-4">
+            <div class="bg-dark-700/50 rounded-lg p-4 space-y-3 ml-9">
+              <div><span class="text-emerald-400 font-semibold">O que é:</span> <p class="text-neutral-300 text-sm">Antes de pitchar pra qualquer cliente, monte o seu. Sem isso você vende algo que nunca usou.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Por que aprender:</span> <p class="text-neutral-300 text-sm">Sua experiência ao montar o seu vira didática pro cliente. O que travou você vai travar ele.</p></div>
+              <div><span class="text-emerald-400 font-semibold">Conceitos-chave:</span> <p class="text-neutral-300 text-sm">"Dogfooding". Coma sua própria comida. Sem AIOS próprio, não avance pra Trilha 2.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 bg-dark-700/30 flex justify-start space-x-3">
+        <button onclick="openModal('modal-1-3')" class="px-4 py-2 text-sm bg-dark-600 hover:bg-dark-500 rounded-lg transition-colors">Ver em Modal</button>
+        <a href="modulo-1-3.html" class="px-4 py-2 text-sm bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg transition-colors">Ver Completo</a>
+      </div>
+    </div>
+
+    <!-- NAVEGACAO ENTRE TRILHAS -->
+    <div class="flex flex-col sm:flex-row gap-4 mt-12">
+      <a href="../../index.html" class="flex-1 text-center px-6 py-3 bg-dark-700 text-neutral-300 rounded-lg font-semibold hover:bg-dark-600 transition-colors">← Voltar ao início</a>
+      <a href="../trilha2/index.html" class="flex-1 text-center px-6 py-3 bg-emerald-600 text-white rounded-lg font-semibold hover:bg-emerald-500 transition-colors">Próxima trilha: A Oferta →</a>
+    </div>
+
+  </main>
+
+  <!-- MODAIS -->
+  <div id="modal-1-1" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target === this) closeModal()">
+    <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
+      <div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
+        <div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.1</span><span class="font-semibold">As 4 ondas da TI</span></div>
+        <button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button>
+      </div>
+      <iframe src="modulo-1-1.html" class="flex-1 w-full rounded-b-xl"></iframe>
+    </div>
+  </div>
+  <div id="modal-1-2" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target === this) closeModal()">
+    <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
+      <div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
+        <div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.2</span><span class="font-semibold">Impostor e degrau</span></div>
+        <button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button>
+      </div>
+      <iframe src="modulo-1-2.html" class="flex-1 w-full rounded-b-xl"></iframe>
+    </div>
+  </div>
+  <div id="modal-1-3" class="modal hidden fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4 bg-black/80" onclick="if(event.target === this) closeModal()">
+    <div class="bg-dark-800 rounded-xl w-full max-w-6xl h-[95vh] flex flex-col border border-dark-600">
+      <div class="p-4 border-b border-dark-600 flex justify-between items-center flex-shrink-0">
+        <div class="flex items-center space-x-3"><span class="text-emerald-400 font-bold">1.3</span><span class="font-semibold">O que é AI OS</span></div>
+        <button onclick="closeModal()" class="text-neutral-400 hover:text-white text-2xl leading-none">&times;</button>
+      </div>
+      <iframe src="modulo-1-3.html" class="flex-1 w-full rounded-b-xl"></iframe>
+    </div>
+  </div>
+
+  <footer class="border-t border-dark-600 py-8 mt-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-neutral-500 text-sm">
+      <p>Vendendo AIOS 2026 · Trilha 1 · <a href="https://inema.club" target="_blank" class="text-sky-400 hover:text-sky-300">INEMA.CLUB</a></p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleTopic(button) {
+      const topicItem = button.closest('.topic-item');
+      const explanation = topicItem.querySelector('.topic-explanation');
+      const moduleCard = button.closest('.bg-dark-800');
+      moduleCard.querySelectorAll('.topic-explanation.active').forEach(exp => {
+        if (exp !== explanation) exp.classList.remove('active');
+      });
+      explanation.classList.toggle('active');
+    }
+    function openModal(id) {
+      const m = document.getElementById(id);
+      if (m) { m.classList.remove('hidden'); document.body.style.overflow = 'hidden'; }
+    }
+    function closeModal() {
+      document.querySelectorAll('.modal').forEach(m => m.classList.add('hidden'));
+      document.body.style.overflow = 'auto';
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+    const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+    const html = document.documentElement;
+    if (localStorage.getItem('theme') === 'light') {
+      html.classList.remove('dark');
+      themeToggleDarkIcon.classList.remove('hidden');
+    } else {
+      html.classList.add('dark');
+      themeToggleLightIcon.classList.remove('hidden');
+    }
+    themeToggle.addEventListener('click', () => {
+      themeToggleDarkIcon.classList.toggle('hidden');
+      themeToggleLightIcon.classList.toggle('hidden');
+      html.classList.toggle('dark');
+      localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
